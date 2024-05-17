@@ -1,20 +1,19 @@
 package ru.netology.dataAccessObject.controller;
 
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ru.netology.dataAccessObject.repository.repDAO;
+import ru.netology.dataAccessObject.repository.RepositoryDAO;
 
 import java.util.List;
 
 
 @RestController
 
-public class controllerDAO {
-    private final repDAO repositoryDAO;
+public class ControllerDAO {
+    private final RepositoryDAO repositoryDAO;
 
-    public controllerDAO(repDAO repositoryDAO) {
+    public ControllerDAO(RepositoryDAO repositoryDAO) {
         this.repositoryDAO = repositoryDAO;
     }
 
